@@ -21,24 +21,25 @@ section{padding:60px 20px;}
 /* Glass Card */
 .glass-card{background:rgba(255,255,255,0.05);padding:30px;border-radius:20px;backdrop-filter:blur(10px);box-shadow:0 0 20px rgba(0,229,255,0.5);max-width:800px;margin:0 auto;}
 
-/* My Coding Universe Grid */
-.content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;justify-items:center;}
-.content-card{background:rgba(255,255,255,0.05);padding:30px;border-radius:20px;text-align:center;transition:transform 0.3s,box-shadow 0.3s;width:100%;max-width:320px;}
-.content-card:hover{transform:translateY(-10px);box-shadow:0 0 25px #00E5FF;}
-.card-icon{font-size:3.5rem;margin-bottom:15px;}
-.card-title{font-size:1.4rem;margin-bottom:10px;}
-.card-description{font-size:1.1rem;}
+/* Content Grid */
+.content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.content-card{background:rgba(255,255,255,0.05);padding:25px;border-radius:15px;text-align:center;transition:transform 0.3s,box-shadow 0.3s;}
+.content-card:hover{transform:translateY(-10px);box-shadow:0 0 20px #00E5FF;}
+.card-icon{font-size:3rem;margin-bottom:15px;}
+.card-title{font-size:1.5rem;margin-bottom:10px;}
+.card-description{font-size:1.1rem;line-height:1.5;color:#ccc;}
 
 /* Social Buttons */
-.social-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
-.social-btn{display:flex;align-items:center;gap:10px;padding:10px 20px;border-radius:10px;text-decoration:none;color:#fff;background:none;transition:all 0.3s;font-size:1.1rem;}
+.social-buttons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.social-btn{display:flex;align-items:center;gap:10px;padding:10px 20px;border-radius:10px;text-decoration:none;color:#fff;background:none;font-weight:bold;transition:all 0.3s;font-size:1.1rem;}
 .social-btn:hover{color:#00E5FF;}
-.social-icon{width:35px;height:35px;object-fit:contain;}
+.social-icon{width:30px;height:30px;object-fit:contain;}
 
 /* Contact Form */
-.contact-form input,.contact-form textarea{width:100%;padding:12px 15px;margin-bottom:15px;border-radius:10px;border:none;outline:none;}
-.submit-btn{padding:12px 25px;border-radius:10px;border:none;background:#00E5FF;color:#000;cursor:pointer;font-weight:bold;transition:all 0.3s;}
+.contact-form input,.contact-form textarea{width:100%;padding:12px 15px;margin-bottom:15px;border-radius:10px;border:none;outline:none;background:#111;color:#fff;}
+.submit-btn{padding:12px 20px;border-radius:10px;border:none;background:#00E5FF;color:#000;font-weight:bold;cursor:pointer;transition:all 0.3s;}
 .submit-btn:hover{background:#00c4e6;}
+.char-count{color:#aaa;font-size:0.9rem;text-align:right;margin-bottom:15px;}
 
 /* Footer */
 .footer{text-align:center;padding:20px;background:#111;}
@@ -46,13 +47,14 @@ section{padding:60px 20px;}
 
 /* Popup */
 .popup-modal{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,0.85);z-index:9999;}
-.popup-content{background:rgba(0,0,0,0.6);padding:25px;border-radius:20px;text-align:center;position:relative;max-width:400px;}
+.popup-content{background:rgba(10,10,10,0.95);padding:30px;border-radius:20px;text-align:center;position:relative;max-width:400px;box-shadow:0 0 25px #00E5FF;}
 .popup-close{position:absolute;top:10px;right:15px;font-size:1.5rem;cursor:pointer;color:#fff;}
 .popup-buttons{display:flex;flex-direction:column;gap:15px;margin-top:20px;}
-.popup-btn{padding:12px;border-radius:10px;text-decoration:none;color:#fff;font-weight:bold;display:flex;align-items:center;justify-content:center;gap:10px;font-size:1rem;background:none;}
+.popup-btn{padding:10px;border-radius:10px;text-decoration:none;color:#fff;font-weight:bold;background:none;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.3s;}
+.popup-btn img{width:30px;height:30px;object-fit:contain;}
 .popup-btn:hover{color:#00E5FF;}
-.popup-icon{width:35px;height:35px;object-fit:contain;}
+.popup-subtitle{font-size:1rem;color:#aaa;margin-top:10px;}
 
 /* Responsive */
-@media(max-width:900px){.content-grid{grid-template-columns:repeat(2,1fr);}.brand-name{font-size:3rem;}.brand-tagline{font-size:1.2rem;}}
-@media(max-width:600px){.content-grid{grid-template-columns:1fr;}.brand-name{font-size:2.2rem;}.brand-tagline{font-size:1rem;}}
+@media(max-width:900px){.content-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.content-grid{grid-template-columns:1fr;}.brand-name{font-size:2.5rem;}.brand-tagline{font-size:1rem;}}
