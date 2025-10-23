@@ -13,15 +13,16 @@
     <div class="popup-content">
         <span id="popupClose" class="popup-close">&times;</span>
         <h2>Follow & Subscribe 💻✨</h2>
+        <p class="popup-subtitle">Stay updated with coding stories, cinematic reels, and fun experiments!</p>
         <div class="popup-buttons">
             <a href="https://www.instagram.com/codewithchiran/?hl=en" target="_blank" class="popup-btn">
                 <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/instagram-vector-logo-icon.jpg" alt="Instagram" class="popup-icon"> Instagram
             </a>
             <a href="https://www.youtube.com/@CodeWithChiran" target="_blank" class="popup-btn">
-                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/YouTube-Logo-PNG-Symbol-for-Video-Platform-Transparent-jpg.webp" alt="YouTube" class="popup-icon"> YouTube
+                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube" class="popup-icon"> YouTube
             </a>
             <a href="https://www.facebook.com/share/1FZxJUTzmu/" target="_blank" class="popup-btn">
-                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/facebook%20icon.png" alt="Facebook" class="popup-icon"> Facebook
+                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/facebook%20icon.jpeg" alt="Facebook" class="popup-icon"> Facebook
             </a>
         </div>
     </div>
@@ -101,10 +102,10 @@
                 <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/instagram-vector-logo-icon.jpg" alt="Instagram" class="social-icon"> Instagram
             </a>
             <a href="https://www.youtube.com/@CodeWithChiran" target="_blank" class="social-btn">
-                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/YouTube-Logo-PNG-Symbol-for-Video-Platform-Transparent-jpg.webp" alt="YouTube" class="social-icon"> YouTube
+                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube" class="social-icon"> YouTube
             </a>
             <a href="https://www.facebook.com/share/1FZxJUTzmu/" target="_blank" class="social-btn">
-                <img src="https://raw.githubusercontent.com/codewith-chiran/codewithchiran-portfolio/main/facebook%20icon.png" alt="Facebook" class="social-icon"> Facebook
+                <img src="https://raw.githubusercontent.com/codewith-chiran/codewith-chiran-portfolio/main/facebook%20icon.jpeg" alt="Facebook" class="social-icon"> Facebook
             </a>
         </div>
     </div>
@@ -118,7 +119,8 @@
             <form id="contactForm" class="contact-form">
                 <input type="text" name="name" id="name" required placeholder="Your Name">
                 <input type="email" name="email" id="email" required placeholder="Your Email">
-                <textarea name="message" id="message" rows="5" required placeholder="Your Message"></textarea>
+                <textarea name="message" id="message" rows="5" maxlength="300" required placeholder="Your Message"></textarea>
+                <div id="charCount" class="char-count">0 / 300</div>
                 <button type="submit" class="submit-btn">
                     <span class="btn-text">Send Message</span>
                     <span class="btn-loading" style="display:none;">Sending...</span>
